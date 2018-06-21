@@ -58,26 +58,26 @@ For simplicity sake, the endpoints were all created in a single nodejs applicati
 Purpose: Create and get status of job
 
 #### Create Job
-Method:  POST
-Inputs:  num - integer for the number of digits of PI to be calculated
-Outputs: success - boolean if job creation was successful
-         job_id - assigned id used for status check and result download
+Method:  POST\
+Inputs:  num - integer for the number of digits of PI to be calculated\
+Outputs: success - boolean if job creation was successful\
+         job_id - assigned id used for status check and result download\
          error - (optional) error message if success == false
 
 #### Check Status
-Method:  GET
-Inputs:  job_id - id response from job creation
-Outputs: success - boolean if job id exists
-	 job_id - return provided job id
-	 num - return num value from job creation
-	 status - status of job
+Method:  GET\
+Inputs:  job_id - id response from job creation\
+Outputs: success - boolean if job id exists\
+	 job_id - return provided job id\
+	 num - return num value from job creation\
+	 status - status of job\
 	 error - (optional) error message if success == false
 
 ### Container 2 - Download Results API
 #### Download Results
-Method:  GET
-Inputs:	 job_id - id of job results to retrieve
-Outputs: digits_of_poi_jobid.zip - file containing digits_of_pi_jobid.txt, a UTF-8 encoded text file containing results
+Method:  GET\
+Inputs:	 job_id - id of job results to retrieve\
+Outputs: digits_of_poi_jobid.zip - file containing digits_of_pi_jobid.txt, a UTF-8 encoded text file containing results\
 	 error - http code 404 if job does not exist
 
 ## Future extensibility
