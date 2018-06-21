@@ -1,0 +1,22 @@
+{
+  "name": "pi_job",
+  "version": "1.0.0",
+  "description": "PI Digit Calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gihub.com/brianluk/pi_job.git"
+  },
+  "author": "Brian Luk <brian.y.luk@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.0",
+    "pi": "^2.0.2",
+    "body-parser": "^1.18.3",
+    "archiver": "^2.1.1"
+  }
+}
